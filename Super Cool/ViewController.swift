@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Coolpic: UIImageView!
+    @IBOutlet weak var Coolbkg: UIImageView!
+    @IBOutlet weak var thebutton: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +27,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func makemecool(sender: AnyObject) {
+    Coolpic.hidden = false
+    Coolbkg.hidden = false
+    thebutton.hidden = true
+        
+    }
 
 }
 
